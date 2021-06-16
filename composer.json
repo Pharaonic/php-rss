@@ -1,0 +1,32 @@
+{
+    "name": "pharaonic/php-rss",
+    "description": "Simplest RSS Generator for PHP",
+    "keywords": [
+        "rss",
+        "rss feed",
+        "php rss feed",
+        "php rss",
+        "php"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Moamen Eltouny (Raggi)",
+            "email": "raggi@raggitech.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-libxml": "*"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Pharaonic\\RSS\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

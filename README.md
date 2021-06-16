@@ -11,6 +11,7 @@
 </p>
 
 <h3 align="center">Simplest RSS Generator for PHP.</h3>
+<h6 align="center">Depends on XMLWriter extension (libxml).</h6>
 <p align="center"><img src="https://validator.w3.org/feed/images/valid-rss-rogers.png" alt="valid rss"></p>
 
 ## Documentation

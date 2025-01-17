@@ -14,7 +14,7 @@ namespace Pharaonic\RSS;
  * @method setUpdated()
  * @method render()
  * 
- * @author Moamen Eltouny (Raggi) <raggi@raggitech.com>
+ * @author Moamen Eltouny
  */
 class RSS
 {

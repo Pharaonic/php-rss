@@ -1,4 +1,5 @@
 <?php
+
 namespace Pharaonic\RSS;
 
 /**
@@ -14,7 +15,7 @@ namespace Pharaonic\RSS;
  * @method appendToChannel()
  * @method render()
  * 
- * @author Moamen Eltouny (Raggi) <raggi@raggitech.com>
+ * @author Moamen Eltouny
  */
 class RSSItem
 {
@@ -141,7 +142,7 @@ class RSSItem
     /**
      * Render the item and add it to the Doc
      *
-     * @param resource $doc
+     * @param \XMLWriter $doc
      * @return void
      */
     public function render(&$doc)

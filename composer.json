@@ -12,11 +12,11 @@
     "authors": [
         {
             "name": "Moamen Eltouny (Raggi)",
-            "email": "raggi@raggitech.com"
+            "email": "raggigroup@gmail.com"
         }
     ],
     "require": {
-        "php": ">=7.0",
+        "php": "^7.0",
         "ext-libxml": "*"
     },
     "config": {

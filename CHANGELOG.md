@@ -6,11 +6,11 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
-- Requires PHP 8.5 (8.6 and newer are not supported on this branch).
+- Requires PHP 8.6 (8.7 and newer are not supported on this branch).
 
 ### Compatibility
 
-- PHP 8.5
+- PHP 8.6
 
 ## 8.3.0 - 2026-10-06
 

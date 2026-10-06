@@ -2,7 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## 8.3.0 - 2026-10-06
+
+The PHP 8.3 line of the package, with the same API and features as 8.2.0. See [UPGRADE.md](UPGRADE.md) for migrating from 1.x.
 
 ### Changed
 

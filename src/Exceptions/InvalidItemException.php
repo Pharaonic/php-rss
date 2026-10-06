@@ -1,6 +1,6 @@
 <?php
 
-namespace Pharaonic\Rss\Exceptions;
+namespace Pharaonic\RSS\Exceptions;
 
 /**
  * Raised when an RSS item is incomplete or receives conflicting values.

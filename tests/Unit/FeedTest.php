@@ -1,24 +1,24 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Unit;
+namespace Pharaonic\RSS\Tests\Unit;
 
 use ArrayIterator;
 use DateTime;
 use DateTimeImmutable;
 use DateTimeZone;
 use Generator;
-use Pharaonic\Rss\Elements\Category;
-use Pharaonic\Rss\Elements\Cloud;
-use Pharaonic\Rss\Elements\Image;
-use Pharaonic\Rss\Elements\TextInput;
-use Pharaonic\Rss\Exceptions\InvalidElementException;
-use Pharaonic\Rss\Exceptions\InvalidFeedException;
-use Pharaonic\Rss\Extensions\Atom\Link;
-use Pharaonic\Rss\Feed;
-use Pharaonic\Rss\Item;
-use Pharaonic\Rss\Support\CloudProtocol;
-use Pharaonic\Rss\Support\Day;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Elements\Category;
+use Pharaonic\RSS\Elements\Cloud;
+use Pharaonic\RSS\Elements\Image;
+use Pharaonic\RSS\Elements\TextInput;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Exceptions\InvalidFeedException;
+use Pharaonic\RSS\Extensions\Atom\Link;
+use Pharaonic\RSS\Feed;
+use Pharaonic\RSS\Item;
+use Pharaonic\RSS\Support\CloudProtocol;
+use Pharaonic\RSS\Support\Day;
+use Pharaonic\RSS\Tests\TestCase;
 
 final class FeedTest extends TestCase
 {

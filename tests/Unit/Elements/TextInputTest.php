@@ -1,10 +1,10 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Unit\Elements;
+namespace Pharaonic\RSS\Tests\Unit\Elements;
 
-use Pharaonic\Rss\Elements\TextInput;
-use Pharaonic\Rss\Exceptions\InvalidElementException;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Elements\TextInput;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Tests\TestCase;
 
 final class TextInputTest extends TestCase
 {

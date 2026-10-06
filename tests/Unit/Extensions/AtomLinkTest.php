@@ -1,11 +1,11 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Unit\Extensions;
+namespace Pharaonic\RSS\Tests\Unit\Extensions;
 
-use Pharaonic\Rss\Exceptions\InvalidElementException;
-use Pharaonic\Rss\Extensions\Atom\AtomExtension;
-use Pharaonic\Rss\Extensions\Atom\Link;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Extensions\Atom\AtomExtension;
+use Pharaonic\RSS\Extensions\Atom\Link;
+use Pharaonic\RSS\Tests\TestCase;
 
 final class AtomLinkTest extends TestCase
 {

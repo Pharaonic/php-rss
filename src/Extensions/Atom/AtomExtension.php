@@ -1,8 +1,8 @@
 <?php
 
-namespace Pharaonic\Rss\Extensions\Atom;
+namespace Pharaonic\RSS\Extensions\Atom;
 
-use Pharaonic\Rss\Contracts\Extension;
+use Pharaonic\RSS\Contracts\Extension;
 
 /**
  * Base class for elements of the Atom namespace used inside RSS.

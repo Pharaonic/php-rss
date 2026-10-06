@@ -1,8 +1,8 @@
 <?php
 
-namespace Pharaonic\Rss\Contracts;
+namespace Pharaonic\RSS\Contracts;
 
-use Pharaonic\Rss\Exceptions\RssException;
+use Pharaonic\RSS\Exceptions\RssException;
 use XMLWriter;
 
 /**
@@ -13,7 +13,7 @@ use XMLWriter;
  * An extension therefore only writes prefixed element names such as
  * "atom:link"; it must not declare its namespace itself.
  *
- * Use the helpers in Pharaonic\Rss\Support\Xml to write text, attributes,
+ * Use the helpers in Pharaonic\RSS\Support\Xml to write text, attributes,
  * and CDATA safely.
  */
 interface Extension

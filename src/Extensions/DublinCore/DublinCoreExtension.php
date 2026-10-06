@@ -1,8 +1,8 @@
 <?php
 
-namespace Pharaonic\Rss\Extensions\DublinCore;
+namespace Pharaonic\RSS\Extensions\DublinCore;
 
-use Pharaonic\Rss\Contracts\Extension;
+use Pharaonic\RSS\Contracts\Extension;
 
 /**
  * Base class for elements of the Dublin Core Metadata Element Set.

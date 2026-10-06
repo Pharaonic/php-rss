@@ -21,17 +21,17 @@ composer require pharaonic/php-rss
 
 ### Namespace
 
-Every class lives under the `Pharaonic\Rss` namespace:
+Every class lives under the `Pharaonic\RSS` namespace:
 
 | Namespace | Contains |
 | --- | --- |
-| `Pharaonic\Rss` | `Feed`, `Item` |
-| `Pharaonic\Rss\Elements` | `Category`, `Guid`, `Enclosure`, `Image`, `Source`, `Cloud`, `TextInput` |
-| `Pharaonic\Rss\Extensions\*` | Atom, Content, Dublin Core, and Media RSS elements |
-| `Pharaonic\Rss\Contracts` | `Extension` |
-| `Pharaonic\Rss\Support` | `Day`, `CloudProtocol`, `DateFormatter`, `Xml`, `NamespaceRegistry` |
-| `Pharaonic\Rss\Exceptions` | `RssException` and its subclasses |
-| `Pharaonic\Rss\Writer` | `RssWriter` |
+| `Pharaonic\RSS` | `Feed`, `Item` |
+| `Pharaonic\RSS\Elements` | `Category`, `Guid`, `Enclosure`, `Image`, `Source`, `Cloud`, `TextInput` |
+| `Pharaonic\RSS\Extensions\*` | Atom, Content, Dublin Core, and Media RSS elements |
+| `Pharaonic\RSS\Contracts` | `Extension` |
+| `Pharaonic\RSS\Support` | `Day`, `CloudProtocol`, `DateFormatter`, `Xml`, `NamespaceRegistry` |
+| `Pharaonic\RSS\Exceptions` | `RssException` and its subclasses |
+| `Pharaonic\RSS\Writer` | `RssWriter` |
 
 :::success Installation Complete
 You're all set! Head to [Basic Usage](#basic-usage) to build your first feed.

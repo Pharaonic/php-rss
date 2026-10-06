@@ -1,18 +1,18 @@
 <?php
 
-namespace Pharaonic\Rss;
+namespace Pharaonic\RSS;
 
 use DateTimeImmutable;
 use DateTimeInterface;
-use Pharaonic\Rss\Contracts\Extension;
-use Pharaonic\Rss\Elements\Category;
-use Pharaonic\Rss\Elements\Cloud;
-use Pharaonic\Rss\Elements\Image;
-use Pharaonic\Rss\Elements\TextInput;
-use Pharaonic\Rss\Exceptions\InvalidFeedException;
-use Pharaonic\Rss\Exceptions\RssException;
-use Pharaonic\Rss\Support\Day;
-use Pharaonic\Rss\Writer\RssWriter;
+use Pharaonic\RSS\Contracts\Extension;
+use Pharaonic\RSS\Elements\Category;
+use Pharaonic\RSS\Elements\Cloud;
+use Pharaonic\RSS\Elements\Image;
+use Pharaonic\RSS\Elements\TextInput;
+use Pharaonic\RSS\Exceptions\InvalidFeedException;
+use Pharaonic\RSS\Exceptions\RssException;
+use Pharaonic\RSS\Support\Day;
+use Pharaonic\RSS\Writer\RssWriter;
 
 /**
  * An RSS 2.0 feed: the <channel> element and its items.

@@ -1,9 +1,9 @@
 <?php
 
-namespace Pharaonic\Rss\Extensions\Media;
+namespace Pharaonic\RSS\Extensions\Media;
 
-use Pharaonic\Rss\Exceptions\InvalidElementException;
-use Pharaonic\Rss\Support\Xml;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Support\Xml;
 use XMLWriter;
 
 /**

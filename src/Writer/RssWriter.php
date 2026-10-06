@@ -1,23 +1,23 @@
 <?php
 
-namespace Pharaonic\Rss\Writer;
+namespace Pharaonic\RSS\Writer;
 
-use Pharaonic\Rss\Contracts\Extension;
-use Pharaonic\Rss\Elements\Category;
-use Pharaonic\Rss\Elements\Cloud;
-use Pharaonic\Rss\Elements\Enclosure;
-use Pharaonic\Rss\Elements\Guid;
-use Pharaonic\Rss\Elements\Image;
-use Pharaonic\Rss\Elements\Source;
-use Pharaonic\Rss\Elements\TextInput;
-use Pharaonic\Rss\Exceptions\InvalidFeedException;
-use Pharaonic\Rss\Exceptions\InvalidItemException;
-use Pharaonic\Rss\Exceptions\RssException;
-use Pharaonic\Rss\Feed;
-use Pharaonic\Rss\Item;
-use Pharaonic\Rss\Support\DateFormatter;
-use Pharaonic\Rss\Support\NamespaceRegistry;
-use Pharaonic\Rss\Support\Xml;
+use Pharaonic\RSS\Contracts\Extension;
+use Pharaonic\RSS\Elements\Category;
+use Pharaonic\RSS\Elements\Cloud;
+use Pharaonic\RSS\Elements\Enclosure;
+use Pharaonic\RSS\Elements\Guid;
+use Pharaonic\RSS\Elements\Image;
+use Pharaonic\RSS\Elements\Source;
+use Pharaonic\RSS\Elements\TextInput;
+use Pharaonic\RSS\Exceptions\InvalidFeedException;
+use Pharaonic\RSS\Exceptions\InvalidItemException;
+use Pharaonic\RSS\Exceptions\RssException;
+use Pharaonic\RSS\Feed;
+use Pharaonic\RSS\Item;
+use Pharaonic\RSS\Support\DateFormatter;
+use Pharaonic\RSS\Support\NamespaceRegistry;
+use Pharaonic\RSS\Support\Xml;
 use XMLWriter;
 
 /**

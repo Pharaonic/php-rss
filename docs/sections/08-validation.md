@@ -4,7 +4,7 @@ The package refuses to produce an invalid document. Value objects validate their
 
 ### Exception Hierarchy
 
-Every exception extends `Pharaonic\Rss\Exceptions\RssException`, which extends `RuntimeException`, so one `catch` covers them all.
+Every exception extends `Pharaonic\RSS\Exceptions\RssException`, which extends `RuntimeException`, so one `catch` covers them all.
 
 | Exception | Thrown when |
 | --- | --- |
@@ -26,7 +26,7 @@ Every exception extends `Pharaonic\Rss\Exceptions\RssException`, which extends `
 ### Catching Errors
 
 ```php
-use Pharaonic\Rss\Exceptions\RssException;
+use Pharaonic\RSS\Exceptions\RssException;
 
 try {
     $xml = $feed->toXml();

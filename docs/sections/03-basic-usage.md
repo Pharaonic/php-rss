@@ -7,8 +7,8 @@ A feed is a `Feed` (the RSS `<channel>`) holding any number of `Item` objects. B
 A channel needs a title, a link, and a description. Each item needs at least a title or a description.
 
 ```php title="public/rss.php"
-use Pharaonic\Rss\Feed;
-use Pharaonic\Rss\Item;
+use Pharaonic\RSS\Feed;
+use Pharaonic\RSS\Item;
 
 $cairo = new DateTimeZone('Africa/Cairo');
 

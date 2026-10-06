@@ -1,8 +1,8 @@
 <?php
 
-namespace Pharaonic\Rss\Extensions\Content;
+namespace Pharaonic\RSS\Extensions\Content;
 
-use Pharaonic\Rss\Contracts\Extension;
+use Pharaonic\RSS\Contracts\Extension;
 
 /**
  * Base class for elements of the RSS 1.0 Content module.

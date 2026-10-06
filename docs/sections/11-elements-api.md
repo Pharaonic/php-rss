@@ -2,7 +2,7 @@
 
 Structured elements are small `final` value objects. Each has a static `make()` with the same arguments as its constructor, and required values are validated on creation.
 
-### Pharaonic\Rss\Elements
+### Pharaonic\RSS\Elements
 
 | Class | Create with | Setters | Getters |
 | --- | --- | --- | --- |
@@ -22,7 +22,7 @@ Structured elements are small `final` value objects. Each has a static `make()` 
 | `Cloud` port | 1 to 65535 |
 | `Cloud` protocol | A `CloudProtocol` constant |
 
-### Pharaonic\Rss\Extensions
+### Pharaonic\RSS\Extensions
 
 | Class | Create with | Setters |
 | --- | --- | --- |
@@ -36,7 +36,7 @@ Structured elements are small `final` value objects. Each has a static `make()` 
 
 Each extension namespace has an abstract base class exposing `PREFIX` and `NAMESPACE_URI` constants: `AtomExtension`, `ContentExtension`, `DublinCoreExtension`, and `MediaExtension`.
 
-### Pharaonic\Rss\Support
+### Pharaonic\RSS\Support
 
 | Class | Members |
 | --- | --- |

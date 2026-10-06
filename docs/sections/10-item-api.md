@@ -1,6 +1,6 @@
 ## Item API
 
-`Pharaonic\Rss\Item` is a `final` class. Every setter returns the same `Item` instance for chaining. Optional string setters treat `null` and `''` as "not set".
+`Pharaonic\RSS\Item` is a `final` class. Every setter returns the same `Item` instance for chaining. Optional string setters treat `null` and `''` as "not set".
 
 ### Setters
 

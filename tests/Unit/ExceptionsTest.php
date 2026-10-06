@@ -1,12 +1,12 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Unit;
+namespace Pharaonic\RSS\Tests\Unit;
 
-use Pharaonic\Rss\Exceptions\InvalidElementException;
-use Pharaonic\Rss\Exceptions\InvalidFeedException;
-use Pharaonic\Rss\Exceptions\InvalidItemException;
-use Pharaonic\Rss\Exceptions\RssException;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Exceptions\InvalidFeedException;
+use Pharaonic\RSS\Exceptions\InvalidItemException;
+use Pharaonic\RSS\Exceptions\RssException;
+use Pharaonic\RSS\Tests\TestCase;
 use RuntimeException;
 
 final class ExceptionsTest extends TestCase

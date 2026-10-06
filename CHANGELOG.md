@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## 8.0.0 - 2026-10-06
 
 This release is a full rebuild of the package. See [UPGRADE.md](UPGRADE.md) for migrating from 1.x.
 

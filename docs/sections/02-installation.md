@@ -4,7 +4,7 @@ Install the package with Composer. There is no configuration file to publish and
 
 ### Requirements
 
-- PHP 8.0
+- PHP 8.1
 - The `xmlwriter` extension (`ext-xmlwriter`), bundled with most PHP builds
 
 You can check that the extension is enabled with:

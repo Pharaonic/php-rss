@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Pharaonic Blog</title>
+    <link>https://pharaonic.dev/blog</link>
+    <description>News &amp; releases from the Pharaonic team.</description>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 06 Oct 2026 12:00:00 +0300</lastBuildDate>
+    <item>
+      <title>PHP RSS rebuilt</title>
+      <link>https://pharaonic.dev/blog/php-rss-rebuilt</link>
+      <description>&lt;p&gt;A modern &lt;strong&gt;RSS 2.0&lt;/strong&gt; generator for PHP.&lt;/p&gt;</description>
+      <category>PHP</category>
+      <category>RSS</category>
+      <guid>https://pharaonic.dev/blog/php-rss-rebuilt</guid>
+      <pubDate>Tue, 06 Oct 2026 10:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>PHP Hijri released</title>
+      <link>https://pharaonic.dev/blog/php-hijri-released</link>
+      <description>A new release is available.</description>
+      <category>PHP</category>
+      <guid isPermaLink="false">php-hijri-release</guid>
+      <pubDate>Mon, 05 Oct 2026 09:30:00 +0300</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -1,32 +1,76 @@
 {
     "name": "pharaonic/php-rss",
-    "description": "Simplest RSS Generator for PHP",
+    "description": "A lightweight and extensible RSS 2.0 feed generator for PHP.",
     "keywords": [
         "rss",
+        "rss 2.0",
         "rss feed",
-        "php rss feed",
-        "php rss",
+        "feed",
+        "feed generator",
+        "syndication",
+        "xml",
+        "atom",
+        "media rss",
+        "podcast",
         "php"
     ],
+    "type": "library",
     "license": "MIT",
+    "homepage": "https://pharaonic.dev/packages/php/rss",
     "authors": [
         {
             "name": "Moamen Eltouny (Raggi)",
             "email": "raggigroup@gmail.com"
         }
     ],
+    "support": {
+        "issues": "https://github.com/Pharaonic/php-rss/issues",
+        "source": "https://github.com/Pharaonic/php-rss",
+        "security": "https://github.com/Pharaonic/php-rss/security/policy"
+    },
     "require": {
-        "php": "^7.0",
-        "ext-libxml": "*"
+        "php": ">=8.4 <8.5",
+        "ext-xmlwriter": "*"
+    },
+    "require-dev": {
+        "ext-dom": "*",
+        "phpstan/phpstan": "^2.3",
+        "phpunit/phpunit": "^9.6",
+        "squizlabs/php_codesniffer": "^3.13 || ^4.0"
     },
     "config": {
         "sort-packages": true
     },
     "autoload": {
         "psr-4": {
-            "Pharaonic\\RSS\\": "src"
+            "Pharaonic\\RSS\\": "src/"
         }
     },
-    "minimum-stability": "dev",
+    "autoload-dev": {
+        "psr-4": {
+            "Pharaonic\\RSS\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test:coverage": "phpunit --coverage-text",
+        "lint": "phpcs",
+        "format": "phpcbf",
+        "analyse": "phpstan analyse --memory-limit=512M",
+        "check": [
+            "@lint",
+            "@analyse",
+            "@test"
+        ]
+    },
+    "scripts-descriptions": {
+        "test": "Run the PHPUnit test suite.",
+        "test:coverage": "Run the test suite with a text coverage report (requires PCOV or Xdebug).",
+        "lint": "Check the code style (PSR-12).",
+        "format": "Fix code style violations automatically.",
+        "analyse": "Run PHPStan static analysis.",
+        "check": "Run the code style check, static analysis, and tests."
+    },
+    "minimum-stability": "stable",
     "prefer-stable": true
 }

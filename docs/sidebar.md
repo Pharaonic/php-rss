@@ -1,0 +1,19 @@
+- Getting Started
+  - [Overview](#overview)
+  - [Installation](#installation)
+  - [Basic Usage](#basic-usage)
+- Usage
+  - [Channel](#channel)
+  - [Items](#items)
+  - [Extensions](#extensions)
+  - [Custom Extensions](#custom-extensions)
+  - [Validation and Errors](#validation)
+- API Reference
+  - [Feed](#feed-api)
+  - [Item](#item-api)
+  - [Elements and Extensions](#elements-api)
+- Examples
+  - [Use Cases](#examples)
+  - [Troubleshooting](#troubleshooting)
+- Community
+  - [Contributors](#contributors)

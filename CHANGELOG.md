@@ -25,7 +25,7 @@ This release is a full rebuild of the package. See [UPGRADE.md](UPGRADE.md) for 
 - `RSS` is replaced by `Feed`, and `RSSItem` by `Item`. Setters lost their `set` prefix (`setTitle()` → `title()`).
 - Dates are passed as `DateTimeInterface` objects instead of preformatted strings.
 - Images are configured with an `Image` object; width and height are only written when set.
-- Requires PHP 8.1 (8.2 and newer are not supported on this branch).
+- Requires PHP 8.2 (8.3 and newer are not supported on this branch).
 
 ### Fixed
 
@@ -45,4 +45,4 @@ This release is a full rebuild of the package. See [UPGRADE.md](UPGRADE.md) for 
 
 ### Compatibility
 
-- PHP 8.1
+- PHP 8.2

@@ -14,7 +14,6 @@
   - [Elements and Extensions](#elements-api)
 - Examples
   - [Use Cases](#examples)
-  - [Upgrading from 1.x](#upgrade)
   - [Troubleshooting](#troubleshooting)
 - Community
   - [Contributors](#contributors)

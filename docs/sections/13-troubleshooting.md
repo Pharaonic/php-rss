@@ -39,7 +39,3 @@ Two extensions use the same prefix with different namespace URIs, often a custom
 ### "Item::guid() received a Guid object and an isPermaLink flag"
 
 You passed both a `Guid` object and the second argument. Use either `guid('id', false)` or `guid(Guid::make('id')->permalink(false))`.
-
-### "Call to undefined method … setTitle()"
-
-You're calling the 1.x API. Setters lost their `set` prefix and the classes were renamed. See [Upgrading from 1.x](#upgrade).

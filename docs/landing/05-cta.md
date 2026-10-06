@@ -9,4 +9,4 @@ buttons:
     icon: arrow-right
 ---
 
-Read the full documentation for installation, channel and item elements, the Atom, Content, Dublin Core, and Media RSS extensions, writing your own extensions, validation, the API reference, real-world examples, and upgrading from 1.x.
+Read the full documentation for installation, channel and item elements, the Atom, Content, Dublin Core, and Media RSS extensions, writing your own extensions, validation, the API reference, and real-world examples.

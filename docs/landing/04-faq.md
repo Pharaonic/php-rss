@@ -30,10 +30,6 @@ No. The package never calls `header()` or prints anything. Send `Content-Type: a
 
 Yes. Use enclosures and the built-in Media RSS extension for podcasts, and implement the `Extension` contract to add any other namespace, such as iTunes or GeoRSS.
 
-## How do I upgrade from 1.x?
-
-The `RSS` and `RSSItem` classes were replaced by `Feed` and `Item`, and setters lost their `set` prefix. The documentation has a full method map and a before-and-after example.
-
 ## Is {package.name} free to use?
 
 Yes. {package.name} is open source under the {package.license} license, so you can use it in personal and commercial projects.

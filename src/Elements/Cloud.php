@@ -1,9 +1,9 @@
 <?php
 
-namespace Pharaonic\Rss\Elements;
+namespace Pharaonic\RSS\Elements;
 
-use Pharaonic\Rss\Exceptions\InvalidElementException;
-use Pharaonic\Rss\Support\CloudProtocol;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Support\CloudProtocol;
 
 /**
  * RSS channel <cloud> element: a web service supporting the rssCloud interface.

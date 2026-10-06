@@ -1,10 +1,10 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Unit\Support;
+namespace Pharaonic\RSS\Tests\Unit\Support;
 
-use Pharaonic\Rss\Exceptions\InvalidElementException;
-use Pharaonic\Rss\Support\Xml;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Support\Xml;
+use Pharaonic\RSS\Tests\TestCase;
 use XMLWriter;
 
 final class XmlTest extends TestCase

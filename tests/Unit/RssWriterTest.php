@@ -1,18 +1,18 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Unit;
+namespace Pharaonic\RSS\Tests\Unit;
 
-use Pharaonic\Rss\Contracts\Extension;
-use Pharaonic\Rss\Exceptions\InvalidElementException;
-use Pharaonic\Rss\Exceptions\RssException;
-use Pharaonic\Rss\Extensions\Atom\Link;
-use Pharaonic\Rss\Extensions\Content\Encoded;
-use Pharaonic\Rss\Extensions\DublinCore\Creator;
-use Pharaonic\Rss\Extensions\Media\Thumbnail;
-use Pharaonic\Rss\Item;
-use Pharaonic\Rss\Support\Xml;
-use Pharaonic\Rss\Tests\TestCase;
-use Pharaonic\Rss\Writer\RssWriter;
+use Pharaonic\RSS\Contracts\Extension;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Exceptions\RssException;
+use Pharaonic\RSS\Extensions\Atom\Link;
+use Pharaonic\RSS\Extensions\Content\Encoded;
+use Pharaonic\RSS\Extensions\DublinCore\Creator;
+use Pharaonic\RSS\Extensions\Media\Thumbnail;
+use Pharaonic\RSS\Item;
+use Pharaonic\RSS\Support\Xml;
+use Pharaonic\RSS\Tests\TestCase;
+use Pharaonic\RSS\Writer\RssWriter;
 use XMLWriter;
 
 final class RssWriterTest extends TestCase

@@ -1,6 +1,6 @@
 <?php
 
-namespace Pharaonic\Rss\Support;
+namespace Pharaonic\RSS\Support;
 
 /**
  * Protocols accepted by the RSS <cloud> element.

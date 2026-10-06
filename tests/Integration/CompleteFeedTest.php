@@ -1,21 +1,21 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Integration;
+namespace Pharaonic\RSS\Tests\Integration;
 
 use DateTimeImmutable;
 use DateTimeZone;
-use Pharaonic\Rss\Elements\Category;
-use Pharaonic\Rss\Elements\Cloud;
-use Pharaonic\Rss\Elements\Enclosure;
-use Pharaonic\Rss\Elements\Guid;
-use Pharaonic\Rss\Elements\Image;
-use Pharaonic\Rss\Elements\Source;
-use Pharaonic\Rss\Elements\TextInput;
-use Pharaonic\Rss\Feed;
-use Pharaonic\Rss\Item;
-use Pharaonic\Rss\Support\CloudProtocol;
-use Pharaonic\Rss\Support\Day;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Elements\Category;
+use Pharaonic\RSS\Elements\Cloud;
+use Pharaonic\RSS\Elements\Enclosure;
+use Pharaonic\RSS\Elements\Guid;
+use Pharaonic\RSS\Elements\Image;
+use Pharaonic\RSS\Elements\Source;
+use Pharaonic\RSS\Elements\TextInput;
+use Pharaonic\RSS\Feed;
+use Pharaonic\RSS\Item;
+use Pharaonic\RSS\Support\CloudProtocol;
+use Pharaonic\RSS\Support\Day;
+use Pharaonic\RSS\Tests\TestCase;
 
 /**
  * A feed using every RSS 2.0 channel and item element.

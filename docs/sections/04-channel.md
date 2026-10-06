@@ -5,7 +5,7 @@
 ### Required Elements
 
 ```php
-use Pharaonic\Rss\Feed;
+use Pharaonic\RSS\Feed;
 
 $feed = Feed::make()
     ->title('Pharaonic')                                  // <title>
@@ -52,7 +52,7 @@ Mutable `DateTime` objects are copied, so changing them afterwards doesn't chang
 `category()` adds a category each time you call it. Pass a string, or a `Category` with a `domain`:
 
 ```php
-use Pharaonic\Rss\Elements\Category;
+use Pharaonic\RSS\Elements\Category;
 
 $feed
     ->category('Technology')
@@ -64,7 +64,7 @@ $feed
 The channel image is an `Image` object. When you don't set its title or link, the writer uses the channel title and link, as RSS 2.0 recommends.
 
 ```php
-use Pharaonic\Rss\Elements\Image;
+use Pharaonic\RSS\Elements\Image;
 
 $feed->image(
     Image::make('https://pharaonic.dev/logo.png')
@@ -79,7 +79,7 @@ Width and height are only written when set. Readers assume 88×31 when they're m
 ### Caching Hints
 
 ```php
-use Pharaonic\Rss\Support\Day;
+use Pharaonic\RSS\Support\Day;
 
 $feed
     ->ttl(60)                 // readers may cache for 60 minutes
@@ -96,9 +96,9 @@ Duplicate hours and days are ignored. A negative `ttl`, an hour outside 0–23, 
 These two elements are rarely used, but both are supported:
 
 ```php
-use Pharaonic\Rss\Elements\Cloud;
-use Pharaonic\Rss\Elements\TextInput;
-use Pharaonic\Rss\Support\CloudProtocol;
+use Pharaonic\RSS\Elements\Cloud;
+use Pharaonic\RSS\Elements\TextInput;
+use Pharaonic\RSS\Support\CloudProtocol;
 
 $feed
     ->cloud(Cloud::make('rpc.pharaonic.dev', 443, '/rpc', 'pleaseNotify', CloudProtocol::XML_RPC))
@@ -112,7 +112,7 @@ $feed
 Namespaced elements such as an Atom self link are attached with `extension()`. See [Extensions](#extensions).
 
 ```php
-use Pharaonic\Rss\Extensions\Atom\Link;
+use Pharaonic\RSS\Extensions\Atom\Link;
 
 $feed->extension(Link::self('https://pharaonic.dev/rss.xml'));
 ```

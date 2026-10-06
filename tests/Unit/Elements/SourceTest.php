@@ -1,11 +1,11 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Unit\Elements;
+namespace Pharaonic\RSS\Tests\Unit\Elements;
 
-use Pharaonic\Rss\Elements\Source;
-use Pharaonic\Rss\Exceptions\InvalidElementException;
-use Pharaonic\Rss\Item;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Elements\Source;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Item;
+use Pharaonic\RSS\Tests\TestCase;
 
 final class SourceTest extends TestCase
 {

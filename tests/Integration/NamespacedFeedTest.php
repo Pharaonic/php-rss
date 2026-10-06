@@ -1,21 +1,21 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Integration;
+namespace Pharaonic\RSS\Tests\Integration;
 
 use DateTimeImmutable;
 use DateTimeZone;
-use Pharaonic\Rss\Contracts\Extension;
-use Pharaonic\Rss\Extensions\Atom\Link;
-use Pharaonic\Rss\Extensions\Content\Encoded;
-use Pharaonic\Rss\Extensions\DublinCore\Creator;
-use Pharaonic\Rss\Extensions\Media\Content;
-use Pharaonic\Rss\Extensions\Media\Description;
-use Pharaonic\Rss\Extensions\Media\Thumbnail;
-use Pharaonic\Rss\Extensions\Media\Title;
-use Pharaonic\Rss\Feed;
-use Pharaonic\Rss\Item;
-use Pharaonic\Rss\Support\Xml;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Contracts\Extension;
+use Pharaonic\RSS\Extensions\Atom\Link;
+use Pharaonic\RSS\Extensions\Content\Encoded;
+use Pharaonic\RSS\Extensions\DublinCore\Creator;
+use Pharaonic\RSS\Extensions\Media\Content;
+use Pharaonic\RSS\Extensions\Media\Description;
+use Pharaonic\RSS\Extensions\Media\Thumbnail;
+use Pharaonic\RSS\Extensions\Media\Title;
+use Pharaonic\RSS\Feed;
+use Pharaonic\RSS\Item;
+use Pharaonic\RSS\Support\Xml;
+use Pharaonic\RSS\Tests\TestCase;
 use XMLWriter;
 
 /**

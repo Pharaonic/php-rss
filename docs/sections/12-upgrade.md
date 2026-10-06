@@ -6,8 +6,8 @@ The package was rebuilt from scratch. The old `RSS` and `RSSItem` classes are go
 
 | 1.x | Current |
 | --- | --- |
-| `Pharaonic\RSS\RSS` | `Pharaonic\Rss\Feed` |
-| `Pharaonic\RSS\RSSItem` | `Pharaonic\Rss\Item` |
+| `Pharaonic\RSS\RSS` | `Pharaonic\RSS\Feed` |
+| `Pharaonic\RSS\RSSItem` | `Pharaonic\RSS\Item` |
 | `new RSS()` | `Feed::make()` |
 | `new RSSItem()` | `Item::make()` |
 | `setTitle()`, `setDescription()`, `setLink()` | `title()`, `description()`, `link()` |
@@ -52,9 +52,9 @@ The package was rebuilt from scratch. The old `RSS` and `RSSItem` classes are go
 - ===Current
 
   ```php title="Current"
-  use Pharaonic\Rss\Elements\Image;
-  use Pharaonic\Rss\Feed;
-  use Pharaonic\Rss\Item;
+  use Pharaonic\RSS\Elements\Image;
+  use Pharaonic\RSS\Feed;
+  use Pharaonic\RSS\Item;
 
   $feed = Feed::make()
       ->title('Pharaonic')
@@ -83,5 +83,5 @@ The package was rebuilt from scratch. The old `RSS` and `RSSItem` classes are go
 - **Image size.** 1.x always wrote width 88 and height 31. They're now only written when set, and readers apply the same defaults.
 - **GUIDs.** `guid('id', false)` writes `isPermaLink="false"` for identifiers that aren't URLs. `guid('https://…')` keeps the old meaning.
 - **Item validation.** An item now needs only a title or a description. A link is no longer required.
-- **Exceptions.** Errors extend `Pharaonic\Rss\Exceptions\RssException` instead of a generic `\Exception`.
+- **Exceptions.** Errors extend `Pharaonic\RSS\Exceptions\RssException` instead of a generic `\Exception`.
 - **Element order.** Channel elements follow RSS 2.0 specification order, so the output differs from 1.x even for identical content.

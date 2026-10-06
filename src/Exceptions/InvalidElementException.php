@@ -1,6 +1,6 @@
 <?php
 
-namespace Pharaonic\Rss\Exceptions;
+namespace Pharaonic\RSS\Exceptions;
 
 /**
  * Raised when an element, an extension, or a namespace receives an invalid value.

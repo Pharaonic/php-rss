@@ -1,8 +1,8 @@
 <?php
 
-namespace Pharaonic\Rss\Support;
+namespace Pharaonic\RSS\Support;
 
-use Pharaonic\Rss\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
 
 /**
  * Collects the XML namespaces required by a document.

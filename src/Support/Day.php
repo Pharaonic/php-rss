@@ -1,6 +1,6 @@
 <?php
 
-namespace Pharaonic\Rss\Support;
+namespace Pharaonic\RSS\Support;
 
 /**
  * Day names accepted by the RSS <skipDays> element.

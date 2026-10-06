@@ -2,7 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## 8.1.0 - 2026-10-06
+
+The PHP 8.1 line of the package, with the same API and features as 8.0.1. See [UPGRADE.md](UPGRADE.md) for migrating from 1.x.
+
+### Changed
+
+- Requires PHP 8.1 (8.2 and newer are not supported on this branch).
+
+### Compatibility
+
+- PHP 8.1
+
+## 8.0.1 - 2026-10-06
+
+### Changed
+
+- The root namespace is `Pharaonic\RSS` again, matching 1.x. Replace `Pharaonic\Rss\` with `Pharaonic\RSS\` in your imports.
+
+## 8.0.0 - 2026-10-06
 
 This release is a full rebuild of the package. See [UPGRADE.md](UPGRADE.md) for migrating from 1.x.
 

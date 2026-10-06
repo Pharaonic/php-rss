@@ -1,6 +1,6 @@
 <?php
 
-namespace Pharaonic\Rss\Exceptions;
+namespace Pharaonic\RSS\Exceptions;
 
 /**
  * Raised when a feed (RSS channel) is incomplete or receives an invalid value.

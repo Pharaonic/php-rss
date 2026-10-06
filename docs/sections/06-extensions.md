@@ -6,17 +6,17 @@ Before writing, the writer collects the namespace of every extension in the feed
 
 | Extension | Namespace prefix | Classes |
 | --- | --- | --- |
-| Atom | `atom` | `Pharaonic\Rss\Extensions\Atom\Link` |
-| Content | `content` | `Pharaonic\Rss\Extensions\Content\Encoded` |
-| Dublin Core | `dc` | `Pharaonic\Rss\Extensions\DublinCore\Creator` |
-| Media RSS | `media` | `Pharaonic\Rss\Extensions\Media\Content`, `Thumbnail`, `Title`, `Description` |
+| Atom | `atom` | `Pharaonic\RSS\Extensions\Atom\Link` |
+| Content | `content` | `Pharaonic\RSS\Extensions\Content\Encoded` |
+| Dublin Core | `dc` | `Pharaonic\RSS\Extensions\DublinCore\Creator` |
+| Media RSS | `media` | `Pharaonic\RSS\Extensions\Media\Content`, `Thumbnail`, `Title`, `Description` |
 
 ### Atom Self Link
 
 Feed validators recommend that a feed links to its own URL. `Link::self()` sets `rel="self"` and `type="application/rss+xml"` for you:
 
 ```php
-use Pharaonic\Rss\Extensions\Atom\Link;
+use Pharaonic\RSS\Extensions\Atom\Link;
 
 $feed->extension(Link::self('https://pharaonic.dev/rss.xml'));
 // <atom:link href="https://pharaonic.dev/rss.xml" rel="self" type="application/rss+xml"/>
@@ -35,7 +35,7 @@ $feed->extension(Link::make('https://pubsubhubbub.appspot.com/')->rel('hub'));
 `Encoded` carries the full HTML body of an item as CDATA, without escaping. A `]]>` inside the content is split safely across CDATA sections, so the document always stays valid.
 
 ```php
-use Pharaonic\Rss\Extensions\Content\Encoded;
+use Pharaonic\RSS\Extensions\Content\Encoded;
 
 $item
     ->description('A short summary for list views.')
@@ -47,7 +47,7 @@ $item
 Unlike `<author>`, `dc:creator` accepts a plain name:
 
 ```php
-use Pharaonic\Rss\Extensions\DublinCore\Creator;
+use Pharaonic\RSS\Extensions\DublinCore\Creator;
 
 $item->extension(Creator::make('Moamen Eltouny'));
 ```
@@ -57,10 +57,10 @@ $item->extension(Creator::make('Moamen Eltouny'));
 `Content` describes a media object, with optional nested title, description, and thumbnails:
 
 ```php
-use Pharaonic\Rss\Extensions\Media\Content;
-use Pharaonic\Rss\Extensions\Media\Description;
-use Pharaonic\Rss\Extensions\Media\Thumbnail;
-use Pharaonic\Rss\Extensions\Media\Title;
+use Pharaonic\RSS\Extensions\Media\Content;
+use Pharaonic\RSS\Extensions\Media\Description;
+use Pharaonic\RSS\Extensions\Media\Thumbnail;
+use Pharaonic\RSS\Extensions\Media\Title;
 
 $item->extension(
     Content::make('https://cdn.pharaonic.dev/giza.mp4')

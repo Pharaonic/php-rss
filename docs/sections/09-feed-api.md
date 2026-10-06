@@ -1,6 +1,6 @@
 ## Feed API
 
-`Pharaonic\Rss\Feed` is a `final` class. Every setter returns the same `Feed` instance for chaining. Optional string setters treat `null` and `''` as "not set".
+`Pharaonic\RSS\Feed` is a `final` class. Every setter returns the same `Feed` instance for chaining. Optional string setters treat `null` and `''` as "not set".
 
 ### Setters
 
@@ -36,7 +36,7 @@
 | --- | --- | --- |
 | `toXml(bool $pretty = true)` | Validates and serializes the feed. `false` gives compact output | `string` |
 
-`toXml()` is a shortcut for `(new RssWriter($pretty))->write($feed)`. You can use `Pharaonic\Rss\Writer\RssWriter` directly if you prefer to inject the writer.
+`toXml()` is a shortcut for `(new RssWriter($pretty))->write($feed)`. You can use `Pharaonic\RSS\Writer\RssWriter` directly if you prefer to inject the writer.
 
 ### Getters
 

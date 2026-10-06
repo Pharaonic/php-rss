@@ -18,7 +18,7 @@ $clean = preg_replace('/[\x00-\x08\x0B\x0C\x0E-\x1F]/', '', mb_convert_encoding(
 
 ### HTML Shows as Escaped Tags in My Reader
 
-`description()` escapes HTML (`&lt;p&gt;`), which is correct RSS 2.0, and readers decode it. Some readers prefer the full body as CDATA. Add `Encoded::make($html)` from `Pharaonic\Rss\Extensions\Content` alongside the description.
+`description()` escapes HTML (`&lt;p&gt;`), which is correct RSS 2.0, and readers decode it. Some readers prefer the full body as CDATA. Add `Encoded::make($html)` from `Pharaonic\RSS\Extensions\Content` alongside the description.
 
 ### The Browser Downloads or Shows the Feed as Text
 

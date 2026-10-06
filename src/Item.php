@@ -1,16 +1,16 @@
 <?php
 
-namespace Pharaonic\Rss;
+namespace Pharaonic\RSS;
 
 use DateTimeImmutable;
 use DateTimeInterface;
-use Pharaonic\Rss\Contracts\Extension;
-use Pharaonic\Rss\Elements\Category;
-use Pharaonic\Rss\Elements\Enclosure;
-use Pharaonic\Rss\Elements\Guid;
-use Pharaonic\Rss\Elements\Source;
-use Pharaonic\Rss\Exceptions\InvalidItemException;
-use Pharaonic\Rss\Exceptions\RssException;
+use Pharaonic\RSS\Contracts\Extension;
+use Pharaonic\RSS\Elements\Category;
+use Pharaonic\RSS\Elements\Enclosure;
+use Pharaonic\RSS\Elements\Guid;
+use Pharaonic\RSS\Elements\Source;
+use Pharaonic\RSS\Exceptions\InvalidItemException;
+use Pharaonic\RSS\Exceptions\RssException;
 
 /**
  * An RSS 2.0 <item>.

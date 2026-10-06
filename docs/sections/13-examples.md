@@ -12,11 +12,11 @@ Build the feed in a small class, return it from a controller with the right `Con
   namespace App\Rss;
 
   use App\Models\Post;
-  use Pharaonic\Rss\Extensions\Atom\Link;
-  use Pharaonic\Rss\Extensions\Content\Encoded;
-  use Pharaonic\Rss\Extensions\DublinCore\Creator;
-  use Pharaonic\Rss\Feed;
-  use Pharaonic\Rss\Item;
+  use Pharaonic\RSS\Extensions\Atom\Link;
+  use Pharaonic\RSS\Extensions\Content\Encoded;
+  use Pharaonic\RSS\Extensions\DublinCore\Creator;
+  use Pharaonic\RSS\Feed;
+  use Pharaonic\RSS\Item;
 
   final class BlogFeed
   {
@@ -79,14 +79,14 @@ Build the feed in a small class, return it from a controller with the right `Con
 Each episode carries an `<enclosure>` for classic podcast apps and a `media:content` for richer readers.
 
 ```php title="podcast.php"
-use Pharaonic\Rss\Elements\Enclosure;
-use Pharaonic\Rss\Elements\Image;
-use Pharaonic\Rss\Extensions\Atom\Link;
-use Pharaonic\Rss\Extensions\DublinCore\Creator;
-use Pharaonic\Rss\Extensions\Media\Content;
-use Pharaonic\Rss\Extensions\Media\Thumbnail;
-use Pharaonic\Rss\Feed;
-use Pharaonic\Rss\Item;
+use Pharaonic\RSS\Elements\Enclosure;
+use Pharaonic\RSS\Elements\Image;
+use Pharaonic\RSS\Extensions\Atom\Link;
+use Pharaonic\RSS\Extensions\DublinCore\Creator;
+use Pharaonic\RSS\Extensions\Media\Content;
+use Pharaonic\RSS\Extensions\Media\Thumbnail;
+use Pharaonic\RSS\Feed;
+use Pharaonic\RSS\Item;
 
 $feed = Feed::make()
     ->title('Pharaonic Podcast')
@@ -126,9 +126,9 @@ Episodes without a description are valid because each one has a title.
 For static sites, write the feed to disk once per build, compact, so the web server can serve it directly.
 
 ```php title="bin/build-feed.php"
-use Pharaonic\Rss\Exceptions\RssException;
-use Pharaonic\Rss\Feed;
-use Pharaonic\Rss\Item;
+use Pharaonic\RSS\Exceptions\RssException;
+use Pharaonic\RSS\Feed;
+use Pharaonic\RSS\Item;
 
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -165,10 +165,10 @@ Failing the build on an `RssException` keeps an invalid feed from ever reaching 
 When you republish items from other feeds, credit each origin with `source()` and keep the original GUID.
 
 ```php title="aggregate.php"
-use Pharaonic\Rss\Elements\Category;
-use Pharaonic\Rss\Elements\Source;
-use Pharaonic\Rss\Feed;
-use Pharaonic\Rss\Item;
+use Pharaonic\RSS\Elements\Category;
+use Pharaonic\RSS\Elements\Source;
+use Pharaonic\RSS\Feed;
+use Pharaonic\RSS\Item;
 
 $feed = Feed::make()
     ->title('PHP Weekly Picks')

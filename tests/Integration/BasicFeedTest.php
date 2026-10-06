@@ -15,7 +15,7 @@ final class BasicFeedTest extends TestCase
 {
     private function feed(): Feed
     {
-        $timezone = new DateTimeZone('Africa/Cairo');
+        $timezone = new DateTimeZone('+03:00');
 
         return Feed::make()
             ->title('Pharaonic Blog')

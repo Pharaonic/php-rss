@@ -356,7 +356,7 @@ final class FeedTest extends TestCase
     public function testDatesKeepTheirTimezone(): void
     {
         $feed = $this->minimalFeed()
-            ->publishedAt(new DateTimeImmutable('2026-10-06 10:00:00', new DateTimeZone('Africa/Cairo')))
+            ->publishedAt(new DateTimeImmutable('2026-10-06 10:00:00', new DateTimeZone('+03:00')))
             ->lastBuildAt(new DateTimeImmutable('2026-10-06 07:00:00', new DateTimeZone('UTC')));
 
         $xpath = $this->feedXpath($feed);

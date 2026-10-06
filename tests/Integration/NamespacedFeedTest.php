@@ -65,7 +65,7 @@ final class NamespacedFeedTest extends TestCase
                 Item::make()
                     ->title('Visiting Giza')
                     ->link('https://pharaonic.dev/blog/giza')
-                    ->publishedAt(new DateTimeImmutable('2026-10-06 10:00:00', new DateTimeZone('Africa/Cairo')))
+                    ->publishedAt(new DateTimeImmutable('2026-10-06 10:00:00', new DateTimeZone('+03:00')))
                     ->extension(Creator::make('Moamen Eltouny'))
                     ->extension(Encoded::make(self::ARTICLE))
                     ->extension(

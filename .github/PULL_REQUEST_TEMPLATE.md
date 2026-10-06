@@ -12,7 +12,7 @@
 
 ## Checklist
 
-- [ ] The pull request targets the correct version branch (e.g. `8.3.x`).
+- [ ] The pull request targets the correct version branch (e.g. `8.4.x`).
 - [ ] Tests cover the change and `composer check` passes.
 - [ ] The source stays compatible with the branch's PHP version.
 - [ ] `/docs` is updated if the public API or usage changed.

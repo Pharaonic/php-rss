@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Changed
+
+- Requires PHP 8.4 (8.5 and newer are not supported on this branch).
+
+### Compatibility
+
+- PHP 8.4
+
 ## 8.3.0 - 2026-10-06
 
 The PHP 8.3 line of the package, with the same API and features as 8.2.0. See [UPGRADE.md](UPGRADE.md) for migrating from 1.x.

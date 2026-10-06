@@ -1,8 +1,8 @@
 <?php
 
-namespace Pharaonic\Rss\Elements;
+namespace Pharaonic\RSS\Elements;
 
-use Pharaonic\Rss\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
 
 /**
  * RSS item <source> element: the channel the item came from.

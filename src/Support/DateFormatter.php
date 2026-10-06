@@ -1,6 +1,6 @@
 <?php
 
-namespace Pharaonic\Rss\Support;
+namespace Pharaonic\RSS\Support;
 
 use DateTimeInterface;
 

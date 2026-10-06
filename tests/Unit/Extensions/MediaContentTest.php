@@ -1,13 +1,13 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Unit\Extensions;
+namespace Pharaonic\RSS\Tests\Unit\Extensions;
 
-use Pharaonic\Rss\Exceptions\InvalidElementException;
-use Pharaonic\Rss\Extensions\Media\Content;
-use Pharaonic\Rss\Extensions\Media\Description;
-use Pharaonic\Rss\Extensions\Media\Thumbnail;
-use Pharaonic\Rss\Extensions\Media\Title;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Extensions\Media\Content;
+use Pharaonic\RSS\Extensions\Media\Description;
+use Pharaonic\RSS\Extensions\Media\Thumbnail;
+use Pharaonic\RSS\Extensions\Media\Title;
+use Pharaonic\RSS\Tests\TestCase;
 
 final class MediaContentTest extends TestCase
 {

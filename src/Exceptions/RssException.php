@@ -1,6 +1,6 @@
 <?php
 
-namespace Pharaonic\Rss\Exceptions;
+namespace Pharaonic\RSS\Exceptions;
 
 use RuntimeException;
 

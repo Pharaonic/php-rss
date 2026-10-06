@@ -1,10 +1,10 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Unit\Support;
+namespace Pharaonic\RSS\Tests\Unit\Support;
 
-use Pharaonic\Rss\Exceptions\InvalidElementException;
-use Pharaonic\Rss\Support\NamespaceRegistry;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Support\NamespaceRegistry;
+use Pharaonic\RSS\Tests\TestCase;
 
 final class NamespaceRegistryTest extends TestCase
 {

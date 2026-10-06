@@ -1,11 +1,11 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Unit\Elements;
+namespace Pharaonic\RSS\Tests\Unit\Elements;
 
-use Pharaonic\Rss\Elements\Cloud;
-use Pharaonic\Rss\Exceptions\InvalidElementException;
-use Pharaonic\Rss\Support\CloudProtocol;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Elements\Cloud;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Support\CloudProtocol;
+use Pharaonic\RSS\Tests\TestCase;
 
 final class CloudTest extends TestCase
 {

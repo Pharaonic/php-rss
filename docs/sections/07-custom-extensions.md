@@ -1,6 +1,6 @@
 ## Custom Extensions
 
-Any namespace the package doesn't ship (iTunes, GeoRSS, Slash, your own) can be added by implementing `Pharaonic\Rss\Contracts\Extension`.
+Any namespace the package doesn't ship (iTunes, GeoRSS, Slash, your own) can be added by implementing `Pharaonic\RSS\Contracts\Extension`.
 
 ### The Contract
 
@@ -17,7 +17,7 @@ interface Extension
 
 ### Writing Values Safely
 
-`XMLWriter` copies invalid UTF-8 and XML control characters into the output as they are. Use the helpers in `Pharaonic\Rss\Support\Xml` to keep the document well-formed:
+`XMLWriter` copies invalid UTF-8 and XML control characters into the output as they are. Use the helpers in `Pharaonic\RSS\Support\Xml` to keep the document well-formed:
 
 | Helper | Writes |
 | --- | --- |
@@ -33,8 +33,8 @@ Each one throws an `InvalidElementException` instead of writing an invalid value
 ```php title="src/Rss/GeoPoint.php"
 namespace App\Rss;
 
-use Pharaonic\Rss\Contracts\Extension;
-use Pharaonic\Rss\Support\Xml;
+use Pharaonic\RSS\Contracts\Extension;
+use Pharaonic\RSS\Support\Xml;
 use XMLWriter;
 
 final class GeoPoint implements Extension
@@ -76,8 +76,8 @@ One extension class can write several elements. This one writes any set of iTune
 ```php title="src/Rss/Itunes.php"
 namespace App\Rss;
 
-use Pharaonic\Rss\Contracts\Extension;
-use Pharaonic\Rss\Support\Xml;
+use Pharaonic\RSS\Contracts\Extension;
+use Pharaonic\RSS\Support\Xml;
 use XMLWriter;
 
 final class Itunes implements Extension

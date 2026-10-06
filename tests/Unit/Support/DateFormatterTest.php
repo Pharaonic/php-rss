@@ -1,12 +1,12 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Unit\Support;
+namespace Pharaonic\RSS\Tests\Unit\Support;
 
 use DateTime;
 use DateTimeImmutable;
 use DateTimeZone;
-use Pharaonic\Rss\Support\DateFormatter;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Support\DateFormatter;
+use Pharaonic\RSS\Tests\TestCase;
 
 final class DateFormatterTest extends TestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Unit\Support;
+namespace Pharaonic\RSS\Tests\Unit\Support;
 
-use Pharaonic\Rss\Support\CloudProtocol;
-use Pharaonic\Rss\Support\Day;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Support\CloudProtocol;
+use Pharaonic\RSS\Support\Day;
+use Pharaonic\RSS\Tests\TestCase;
 
 final class ConstantsTest extends TestCase
 {

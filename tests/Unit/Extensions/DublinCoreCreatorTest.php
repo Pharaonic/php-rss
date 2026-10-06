@@ -1,11 +1,11 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Unit\Extensions;
+namespace Pharaonic\RSS\Tests\Unit\Extensions;
 
-use Pharaonic\Rss\Exceptions\InvalidElementException;
-use Pharaonic\Rss\Extensions\DublinCore\Creator;
-use Pharaonic\Rss\Extensions\DublinCore\DublinCoreExtension;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Extensions\DublinCore\Creator;
+use Pharaonic\RSS\Extensions\DublinCore\DublinCoreExtension;
+use Pharaonic\RSS\Tests\TestCase;
 
 final class DublinCoreCreatorTest extends TestCase
 {

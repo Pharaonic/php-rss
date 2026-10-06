@@ -1,18 +1,18 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Integration;
+namespace Pharaonic\RSS\Tests\Integration;
 
 use DateTimeImmutable;
 use DateTimeZone;
-use Pharaonic\Rss\Elements\Enclosure;
-use Pharaonic\Rss\Elements\Image;
-use Pharaonic\Rss\Extensions\Atom\Link;
-use Pharaonic\Rss\Extensions\DublinCore\Creator;
-use Pharaonic\Rss\Extensions\Media\Content;
-use Pharaonic\Rss\Extensions\Media\Thumbnail;
-use Pharaonic\Rss\Feed;
-use Pharaonic\Rss\Item;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Elements\Enclosure;
+use Pharaonic\RSS\Elements\Image;
+use Pharaonic\RSS\Extensions\Atom\Link;
+use Pharaonic\RSS\Extensions\DublinCore\Creator;
+use Pharaonic\RSS\Extensions\Media\Content;
+use Pharaonic\RSS\Extensions\Media\Thumbnail;
+use Pharaonic\RSS\Feed;
+use Pharaonic\RSS\Item;
+use Pharaonic\RSS\Tests\TestCase;
 
 /**
  * A podcast-style feed built with RSS enclosures and Media RSS.

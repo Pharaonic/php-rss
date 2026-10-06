@@ -1,19 +1,19 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Unit;
+namespace Pharaonic\RSS\Tests\Unit;
 
 use DateTime;
 use DateTimeImmutable;
 use DateTimeZone;
-use Pharaonic\Rss\Elements\Category;
-use Pharaonic\Rss\Elements\Enclosure;
-use Pharaonic\Rss\Elements\Guid;
-use Pharaonic\Rss\Elements\Source;
-use Pharaonic\Rss\Exceptions\InvalidItemException;
-use Pharaonic\Rss\Extensions\Content\Encoded;
-use Pharaonic\Rss\Extensions\DublinCore\Creator;
-use Pharaonic\Rss\Item;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Elements\Category;
+use Pharaonic\RSS\Elements\Enclosure;
+use Pharaonic\RSS\Elements\Guid;
+use Pharaonic\RSS\Elements\Source;
+use Pharaonic\RSS\Exceptions\InvalidItemException;
+use Pharaonic\RSS\Extensions\Content\Encoded;
+use Pharaonic\RSS\Extensions\DublinCore\Creator;
+use Pharaonic\RSS\Item;
+use Pharaonic\RSS\Tests\TestCase;
 
 final class ItemTest extends TestCase
 {

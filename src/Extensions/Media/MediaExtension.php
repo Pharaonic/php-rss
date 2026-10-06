@@ -1,9 +1,9 @@
 <?php
 
-namespace Pharaonic\Rss\Extensions\Media;
+namespace Pharaonic\RSS\Extensions\Media;
 
-use Pharaonic\Rss\Contracts\Extension;
-use Pharaonic\Rss\Exceptions\InvalidElementException;
+use Pharaonic\RSS\Contracts\Extension;
+use Pharaonic\RSS\Exceptions\InvalidElementException;
 
 /**
  * Base class for elements of the Media RSS namespace.

@@ -5,9 +5,9 @@
 ### A Complete Item
 
 ```php
-use Pharaonic\Rss\Elements\Enclosure;
-use Pharaonic\Rss\Elements\Source;
-use Pharaonic\Rss\Item;
+use Pharaonic\RSS\Elements\Enclosure;
+use Pharaonic\RSS\Elements\Source;
+use Pharaonic\RSS\Item;
 
 $item = Item::make()
     ->title('PHP RSS rebuilt')
@@ -34,7 +34,7 @@ $feed->addItem($item);
 RSS 2.0 expects an email address in `<author>`, conventionally `email (Name)`. If you only have a name, use the Dublin Core `Creator` extension instead:
 
 ```php
-use Pharaonic\Rss\Extensions\DublinCore\Creator;
+use Pharaonic\RSS\Extensions\DublinCore\Creator;
 
 $item->extension(Creator::make('Moamen Eltouny')); // <dc:creator>Moamen Eltouny</dc:creator>
 ```
@@ -51,7 +51,7 @@ $item->guid('post-42', false);                     // <guid isPermaLink="false">
 You can also pass a `Guid` object:
 
 ```php
-use Pharaonic\Rss\Elements\Guid;
+use Pharaonic\RSS\Elements\Guid;
 
 $item->guid(Guid::make('post-42')->permalink(false));
 ```
@@ -84,7 +84,7 @@ $item->source(Source::make('Pharaonic News', 'https://pharaonic.dev/news/rss.xml
 Namespaced elements are added with `extension()` and written after the core item elements, in the order you add them:
 
 ```php
-use Pharaonic\Rss\Extensions\Content\Encoded;
+use Pharaonic\RSS\Extensions\Content\Encoded;
 
 $item
     ->extension(Creator::make('Moamen Eltouny'))

@@ -1,6 +1,6 @@
 <?php
 
-namespace Pharaonic\Rss\Extensions\Media;
+namespace Pharaonic\RSS\Extensions\Media;
 
 /**
  * <media:title> element: the title of a media object.

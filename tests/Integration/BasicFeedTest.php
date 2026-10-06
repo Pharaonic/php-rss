@@ -1,12 +1,12 @@
 <?php
 
-namespace Pharaonic\Rss\Tests\Integration;
+namespace Pharaonic\RSS\Tests\Integration;
 
 use DateTimeImmutable;
 use DateTimeZone;
-use Pharaonic\Rss\Feed;
-use Pharaonic\Rss\Item;
-use Pharaonic\Rss\Tests\TestCase;
+use Pharaonic\RSS\Feed;
+use Pharaonic\RSS\Item;
+use Pharaonic\RSS\Tests\TestCase;
 
 /**
  * A typical website or blog feed using only common RSS 2.0 elements.

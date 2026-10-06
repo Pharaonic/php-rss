@@ -1,13 +1,13 @@
 <?php
 
-namespace Pharaonic\Rss\Tests;
+namespace Pharaonic\RSS\Tests;
 
 use DOMDocument;
 use DOMNode;
 use DOMXPath;
 use LibXMLError;
-use Pharaonic\Rss\Contracts\Extension;
-use Pharaonic\Rss\Feed;
+use Pharaonic\RSS\Contracts\Extension;
+use Pharaonic\RSS\Feed;
 use PHPUnit\Framework\TestCase as BaseTestCase;
 use XMLWriter;
 

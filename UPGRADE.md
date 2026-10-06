@@ -6,7 +6,7 @@ The package was rebuilt from scratch. The old `RSS` and `RSSItem` classes are go
 
 ### Requirements
 
-- PHP 8.0 or newer.
+- PHP 8.0.
 - `ext-xmlwriter` (bundled with most PHP builds).
 
 ### Class and method map

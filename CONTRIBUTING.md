@@ -26,13 +26,14 @@ Each PHP version has its own branch. Use the branch matching the PHP version you
 8.0.x → PHP 8.0
 8.1.x → PHP 8.1
 8.2.x → PHP 8.2
+8.3.x → PHP 8.3
 ```
 
 Example:
 
 ```bash
-git checkout 8.2.x
-git pull upstream 8.2.x
+git checkout 8.3.x
+git pull upstream 8.3.x
 ```
 
 ## Create a working branch
@@ -57,7 +58,7 @@ docs/
 
 - Keep each change focused.
 - Add or update tests for every behavior change. Assert on the generated XML (XPath) rather than on getters alone.
-- Keep the source compatible with the branch's PHP version. On `8.2.x`, do not use typed class constants, dynamic class constant fetch, `#[\Override]`, `json_validate()`, or any other feature added after PHP 8.2.
+- Keep the source compatible with the branch's PHP version. On `8.3.x`, do not use property hooks, asymmetric visibility, `new` without parentheses in member access, `#[\Deprecated]`, `array_find()`, or any other feature added after PHP 8.3.
 - New namespaced elements belong in `src/Extensions/` as `Extension` implementations; do not add extension-specific methods to `Feed` or `Item`.
 - Update `README.md` when the public API or usage changes.
 - Update `CHANGELOG.md` under `Unreleased`.
@@ -88,7 +89,7 @@ Open the pull request against the same version branch you started from:
 ```text
 fix/escape-cloud-path
         ↓
-      8.2.x
+      8.3.x
 ```
 
 Do not submit the same change to multiple version branches unless requested.

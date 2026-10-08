@@ -236,6 +236,79 @@ final class Content extends MediaExtension
         return $this;
     }
 
+    public function getUrl(): string
+    {
+        return $this->url;
+    }
+
+    public function getFileSize(): ?int
+    {
+        return $this->fileSize;
+    }
+
+    public function getType(): ?string
+    {
+        return $this->type;
+    }
+
+    public function getMedium(): ?string
+    {
+        return $this->medium;
+    }
+
+    public function getIsDefault(): ?bool
+    {
+        return $this->isDefault;
+    }
+
+    public function getExpression(): ?string
+    {
+        return $this->expression;
+    }
+
+    public function getBitrate(): ?int
+    {
+        return $this->bitrate;
+    }
+
+    public function getDuration(): ?int
+    {
+        return $this->duration;
+    }
+
+    public function getWidth(): ?int
+    {
+        return $this->width;
+    }
+
+    public function getHeight(): ?int
+    {
+        return $this->height;
+    }
+
+    public function getLang(): ?string
+    {
+        return $this->lang;
+    }
+
+    public function getTitle(): ?Title
+    {
+        return $this->title;
+    }
+
+    public function getDescription(): ?Description
+    {
+        return $this->description;
+    }
+
+    /**
+     * @return list<Thumbnail>
+     */
+    public function getThumbnails(): array
+    {
+        return $this->thumbnails;
+    }
+
     public function write(XMLWriter $writer): void
     {
         $writer->startElement($this->prefix() . ':content');

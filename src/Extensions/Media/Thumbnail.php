@@ -73,6 +73,26 @@ final class Thumbnail extends MediaExtension
         return $this;
     }
 
+    public function getUrl(): string
+    {
+        return $this->url;
+    }
+
+    public function getWidth(): ?int
+    {
+        return $this->width;
+    }
+
+    public function getHeight(): ?int
+    {
+        return $this->height;
+    }
+
+    public function getTime(): ?string
+    {
+        return $this->time;
+    }
+
     public function write(XMLWriter $writer): void
     {
         $writer->startElement($this->prefix() . ':thumbnail');

@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+### Added
+
+- Getters on `Atom\Link`, `Media\Content`, and `Media\Thumbnail`, matching their setters. `Content::isDefault()` is the setter, so its getter is `getIsDefault()`.
+
 ### Changed
 
 - Requires PHP 8.4 (8.5 and newer are not supported on this branch).

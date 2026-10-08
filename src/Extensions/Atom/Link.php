@@ -108,6 +108,36 @@ final class Link extends AtomExtension
         return $this;
     }
 
+    public function getHref(): string
+    {
+        return $this->href;
+    }
+
+    public function getRel(): ?string
+    {
+        return $this->rel;
+    }
+
+    public function getType(): ?string
+    {
+        return $this->type;
+    }
+
+    public function getHreflang(): ?string
+    {
+        return $this->hreflang;
+    }
+
+    public function getTitle(): ?string
+    {
+        return $this->title;
+    }
+
+    public function getLength(): ?int
+    {
+        return $this->length;
+    }
+
     public function write(XMLWriter $writer): void
     {
         $writer->startElement($this->prefix() . ':link');

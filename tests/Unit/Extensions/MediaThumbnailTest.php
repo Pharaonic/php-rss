@@ -36,6 +36,33 @@ final class MediaThumbnailTest extends TestCase
         );
     }
 
+    public function testGettersReturnNullByDefault(): void
+    {
+        $thumbnail = Thumbnail::make('https://example.com/image.jpg');
+
+        $this->assertSame('https://example.com/image.jpg', $thumbnail->getUrl());
+        $this->assertNull($thumbnail->getWidth());
+        $this->assertNull($thumbnail->getHeight());
+        $this->assertNull($thumbnail->getTime());
+    }
+
+    public function testGettersReturnTheConfiguredValues(): void
+    {
+        $thumbnail = Thumbnail::make('https://example.com/image.jpg')
+            ->width(1200)
+            ->height(630)
+            ->time('12:05:01.123');
+
+        $this->assertSame(1200, $thumbnail->getWidth());
+        $this->assertSame(630, $thumbnail->getHeight());
+        $this->assertSame('12:05:01.123', $thumbnail->getTime());
+    }
+
+    public function testEmptyTimeIsReturnedAsNull(): void
+    {
+        $this->assertNull(Thumbnail::make('https://example.com/image.jpg')->time('')->getTime());
+    }
+
     public function testRejectsEmptyUrl(): void
     {
         $this->expectException(InvalidElementException::class);

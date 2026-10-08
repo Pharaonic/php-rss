@@ -63,6 +63,50 @@ final class AtomLinkTest extends TestCase
         $this->assertXPathCount(1, $xpath, '/root/atom:link/@*');
     }
 
+    public function testGettersReturnNullByDefault(): void
+    {
+        $link = Link::make('https://example.com/rss.xml');
+
+        $this->assertSame('https://example.com/rss.xml', $link->getHref());
+        $this->assertNull($link->getRel());
+        $this->assertNull($link->getType());
+        $this->assertNull($link->getHreflang());
+        $this->assertNull($link->getTitle());
+        $this->assertNull($link->getLength());
+    }
+
+    public function testGettersReturnTheConfiguredValues(): void
+    {
+        $link = Link::make('https://example.com/feed')
+            ->rel('alternate')
+            ->type('text/html')
+            ->hreflang('ar')
+            ->title('النسخة العربية')
+            ->length(1024);
+
+        $this->assertSame('alternate', $link->getRel());
+        $this->assertSame('text/html', $link->getType());
+        $this->assertSame('ar', $link->getHreflang());
+        $this->assertSame('النسخة العربية', $link->getTitle());
+        $this->assertSame(1024, $link->getLength());
+    }
+
+    public function testSelfLinkGetters(): void
+    {
+        $link = Link::self('https://example.com/rss.xml');
+
+        $this->assertSame('self', $link->getRel());
+        $this->assertSame('application/rss+xml', $link->getType());
+    }
+
+    public function testRemovedAttributesAreReturnedAsNull(): void
+    {
+        $link = Link::self('https://example.com/rss.xml')->rel(null)->type('');
+
+        $this->assertNull($link->getRel());
+        $this->assertNull($link->getType());
+    }
+
     public function testRejectsEmptyHref(): void
     {
         $this->expectException(InvalidElementException::class);

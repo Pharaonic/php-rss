@@ -82,6 +82,64 @@ final class MediaContentTest extends TestCase
         );
     }
 
+    public function testGettersReturnNullByDefault(): void
+    {
+        $content = Content::make('https://example.com/video.mp4');
+
+        $this->assertSame('https://example.com/video.mp4', $content->getUrl());
+        $this->assertNull($content->getFileSize());
+        $this->assertNull($content->getType());
+        $this->assertNull($content->getMedium());
+        $this->assertNull($content->getIsDefault());
+        $this->assertNull($content->getExpression());
+        $this->assertNull($content->getBitrate());
+        $this->assertNull($content->getDuration());
+        $this->assertNull($content->getWidth());
+        $this->assertNull($content->getHeight());
+        $this->assertNull($content->getLang());
+        $this->assertNull($content->getTitle());
+        $this->assertNull($content->getDescription());
+        $this->assertSame([], $content->getThumbnails());
+    }
+
+    public function testGettersReturnTheConfiguredValues(): void
+    {
+        $title = Title::make('Launch video');
+        $description = Description::make('Behind the scenes');
+        $first = Thumbnail::make('https://example.com/1.jpg');
+        $second = Thumbnail::make('https://example.com/2.jpg');
+
+        $content = Content::make('https://example.com/video.mp4')
+            ->fileSize(12216320)
+            ->type('video/mp4')
+            ->medium(Content::MEDIUM_VIDEO)
+            ->isDefault(false)
+            ->expression(Content::EXPRESSION_FULL)
+            ->bitrate(128)
+            ->duration(185)
+            ->width(1920)
+            ->height(1080)
+            ->lang('en')
+            ->title($title)
+            ->description($description)
+            ->thumbnail($first)
+            ->thumbnail($second);
+
+        $this->assertSame(12216320, $content->getFileSize());
+        $this->assertSame('video/mp4', $content->getType());
+        $this->assertSame('video', $content->getMedium());
+        $this->assertFalse($content->getIsDefault());
+        $this->assertSame('full', $content->getExpression());
+        $this->assertSame(128, $content->getBitrate());
+        $this->assertSame(185, $content->getDuration());
+        $this->assertSame(1920, $content->getWidth());
+        $this->assertSame(1080, $content->getHeight());
+        $this->assertSame('en', $content->getLang());
+        $this->assertSame($title, $content->getTitle());
+        $this->assertSame($description, $content->getDescription());
+        $this->assertSame([$first, $second], $content->getThumbnails());
+    }
+
     public function testRejectsEmptyUrl(): void
     {
         $this->expectException(InvalidElementException::class);

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Added
+
+- Getters on `Atom\Link`, `Media\Content`, and `Media\Thumbnail`, matching their setters. `Content::isDefault()` is the setter, so its getter is `getIsDefault()`.
+
 ## 8.0.1 - 2026-10-06
 
 ### Changed

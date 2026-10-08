@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Added
+
+- Getters on `Atom\Link`, `Media\Content`, and `Media\Thumbnail`, matching their setters. `Content::isDefault()` is the setter, so its getter is `getIsDefault()`.
+
 ## 8.2.0 - 2026-10-06
 
 The PHP 8.2 line of the package, with the same API and features as 8.1.0. See [UPGRADE.md](UPGRADE.md) for migrating from 1.x.

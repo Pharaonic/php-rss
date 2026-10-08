@@ -26,11 +26,11 @@ Structured elements are small `final` value objects. Each has a static `make()` 
 
 | Class | Create with | Setters |
 | --- | --- | --- |
-| `Atom\Link` | `make(string $href)`, `self(string $href)` | `rel()`, `type()`, `hreflang()`, `title()`, `length(?int)` |
+| `Atom\Link` | `make(string $href)`, `self(string $href)` | `rel()`, `type()`, `hreflang()`, `title()`, `length(?int)`; getters `getHref()`, `getRel()`, `getType()`, `getHreflang()`, `getTitle()`, `getLength()` |
 | `Content\Encoded` | `make(string $content)` | Getter: `getContent()` |
 | `DublinCore\Creator` | `make(string $name)` | Getter: `getName()` |
-| `Media\Content` | `make(string $url)` | `fileSize()`, `type()`, `medium()`, `isDefault()`, `expression()`, `bitrate()`, `duration()`, `width()`, `height()`, `lang()`, `title(?Title)`, `description(?Description)`, `thumbnail(Thumbnail)` |
-| `Media\Thumbnail` | `make(string $url)` | `width()`, `height()`, `time(?string)` |
+| `Media\Content` | `make(string $url)` | `fileSize()`, `type()`, `medium()`, `isDefault()`, `expression()`, `bitrate()`, `duration()`, `width()`, `height()`, `lang()`, `title(?Title)`, `description(?Description)`, `thumbnail(Thumbnail)`; getters `getUrl()`, `getFileSize()`, `getType()`, `getMedium()`, `getIsDefault()`, `getExpression()`, `getBitrate()`, `getDuration()`, `getWidth()`, `getHeight()`, `getLang()`, `getTitle()`, `getDescription()`, `getThumbnails()` |
+| `Media\Thumbnail` | `make(string $url)` | `width()`, `height()`, `time(?string)`; getters `getUrl()`, `getWidth()`, `getHeight()`, `getTime()` |
 | `Media\Title` | `make(string $text)` | `type(?string)`; getters `getText()`, `getType()` |
 | `Media\Description` | `make(string $text)` | `type(?string)`; getters `getText()`, `getType()` |
 

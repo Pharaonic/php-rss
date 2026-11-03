@@ -35,7 +35,7 @@
     "require-dev": {
         "ext-dom": "*",
         "phpstan/phpstan": "^2.3",
-        "phpunit/phpunit": "^9.6",
+        "phpunit/phpunit": "^9.6 || ^13.0",
         "squizlabs/php_codesniffer": "^3.13 || ^4.0"
     },
     "config": {
